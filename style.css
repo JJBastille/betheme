@@ -1,0 +1,365 @@
+/*
+Theme Name: Betheme
+Theme URI: http://themes.muffingroup.com/betheme/
+Author: Muffin group
+Author URI: http://muffingroup.com/
+Description: The biggest WordPress Theme ever
+License: Themeforest Split Licence
+License URI: -
+Version: 20.4.3.1
+
+All css files are placed in /css/ folder
+*/
+
+
+
+/*******************************/
+/** FONTS EMBED **/
+/*******************************/
+
+@font-face {
+  font-family: 'GalanoGrotesque-Bold';
+  src: url('fonts/GalanoGrotesque-Bold.eot?#iefix') format('embedded-opentype'),  url('fonts/GalanoGrotesque-Bold.otf')  format('opentype'),
+       url('fonts/GalanoGrotesque-Bold.woff') format('woff'), url('fonts/GalanoGrotesque-Bold.ttf')  format('truetype'), url('fonts/GalanoGrotesque-Bold.svg#GalanoGrotesque-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GalanoGrotesque-Light';
+  src: url('fonts/GalanoGrotesque-Light.eot?#iefix') format('embedded-opentype'),  url('fonts/GalanoGrotesque-Light.otf')  format('opentype'),
+       url('fonts/GalanoGrotesque-Light.woff') format('woff'), url('fonts/GalanoGrotesque-Light.ttf')  format('truetype'), url('fonts/GalanoGrotesque-Light.svg#GalanoGrotesque-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GalanoGrotesque-Medium';
+  src: url('fonts/GalanoGrotesque-Medium.eot?#iefix') format('embedded-opentype'),  url('fonts/GalanoGrotesque-Medium.otf')  format('opentype'),
+       url('fonts/GalanoGrotesque-Medium.woff') format('woff'), url('fonts/GalanoGrotesque-Medium.ttf')  format('truetype'), url('fonts/GalanoGrotesque-Medium.svg#GalanoGrotesque-Medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GalanoGrotesque-Regular';
+  src: url('fonts/GalanoGrotesque-Regular.eot?#iefix') format('embedded-opentype'),  url('fonts/GalanoGrotesque-Regular.otf')  format('opentype'),
+       url('fonts/GalanoGrotesque-Regular.woff') format('woff'), url('fonts/GalanoGrotesque-Regular.ttf')  format('truetype'), url('fonts/GalanoGrotesque-Regular.svg#GalanoGrotesque-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+/*******************************/
+/** GENERIC **/
+/*******************************/
+
+.animate-all {
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.none-underline:hover {
+  text-decoration: none;
+}
+
+#Subheader {
+  display: none;
+}
+
+
+
+/*******************************/
+/** BOUTONS **/
+/*******************************/
+
+#Wrapper .vc_btn3 {
+  font-family: "GalanoGrotesque-Bold";
+  border-radius: 100px;
+  padding: 14px 34px 14px 47px;
+  border: 0;
+  font-size: 18px;
+  background: #2581ff;
+  background: -webkit-linear-gradient(90deg, #2581ff, #0bd7ff);
+  background: -o-linear-gradient(-90deg, red, yellow);
+  background: -moz-linear-gradient(-90deg, red, yellow);
+  background: linear-gradient(90deg, #2581ff, #0bd7ff);
+  color: #ffffff;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out
+}
+
+#Wrapper .vc_btn3:hover {
+  box-shadow: 0 8px 19px rgba(37,129,255,0.4);
+}
+
+.button-flat a.button:after, .button-flat a.tp-button:after, .button-flat button:after, .button-flat input[type="submit"]:after, .button-flat input[type="reset"]:after, .button-flat input[type="button"]:after {
+  display: none;
+}
+
+#Content .vc_btn3.vc_btn3-size-md .vc_btn3-icon {
+    font-size: 14px;
+    height: 16px;
+    line-height: 14px;
+    left: 26px;
+}
+
+
+
+/****************/
+/** ANIMATIONS **/
+/****************/
+
+@-webkit-keyframes opacitydownup {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes opacitydownup {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes opacitydownup {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes opacitydownup {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes levitation {
+  0%   { transform: translateY(0px); }
+  100% { transform: translateY(20px); }
+}
+@-moz-keyframes levitation {
+  0%   { transform: translateY(0px); }
+  100% { transform: translateY(20px); }
+}
+@-o-keyframes levitation {
+  0%   { transform: translateY(0px); }
+  100% { transform: translateY(20px); }
+}
+@keyframes levitation {
+  0%   { transform: translateY(0px); }
+  100% { transform: translateY(20px); }
+}
+
+.levitation img {
+  -webkit-animation: levitation 3s ease-in-out infinite alternate;
+  -moz-animation:    levitation 3s ease-in-out infinite alternate;
+  -o-animation:      levitation 3s ease-in-out infinite alternate;
+  animation:         levitation 3s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes opacityshadow {
+  0%   { opacity: 0.1; }
+  100% { opacity: 0.3; }
+}
+@-moz-keyframes opacityshadow {
+  0%   { opacity: 0.1; }
+  100% { opacity: 0.3; }
+}
+@-o-keyframes opacityshadow {
+  0%   { opacity: 0.1; }
+  100% { opacity: 0.3; }
+}
+@keyframes opacityshadow {
+  0%   { opacity: 0.1; }
+  100% { opacity: 0.3; }
+}
+
+.opacityshadow img {
+  -webkit-animation: opacityshadow 3s ease-in-out infinite alternate;
+  -moz-animation:    opacityshadow 3s ease-in-out infinite alternate;
+  -o-animation:      opacityshadow 3s ease-in-out infinite alternate;
+  animation:         opacityshadow 3s ease-in-out infinite alternate;
+}
+
+
+/*******************************/
+/** FONTS APPLIED **/
+/*******************************/
+
+.header_maintitle {
+  font-family: 'GalanoGrotesque-Bold', sans-serif !important;
+}
+
+.header_suptitle {
+  font-family: 'GalanoGrotesque-Light', sans-serif !important;
+}
+
+.header_content {
+  font-family: 'GalanoGrotesque-Regular', sans-serif !important;
+}
+
+#Top_bar .menu > li > a {
+  font-family: 'GalanoGrotesque-Medium', sans-serif !important;
+}
+
+
+
+/*******************************/
+/** CORRECTION STYLE EN PLACE **/
+/*******************************/
+
+.mfn-main-slider {
+  margin-top: -2px;
+}
+
+#Header_wrapper #Header #Top_bar:not(.is-sticky) {
+    background: rgba(0, 0, 0, 0.7) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15) !important;
+}
+
+#Action_bar li {
+  font-size: 14px;
+}
+
+#Top_bar .menu > li > a span:not(.description) {
+    padding: 0 !important;
+}
+
+#Top_bar .menu > li {
+    padding: 0px 20px;
+}
+
+#Top_bar .menu > li > a {
+  font-size: 15px;
+}
+
+#Top_bar .menu > li a:after {
+    background: #2581ff !important;
+}
+
+.sticky-dark #Top_bar.is-sticky {
+  background: rgba(0,0,0,.85) !important;
+}
+
+#Header #Action_bar .social {
+  padding: 0;
+}
+
+#Action_bar .social .field {
+    float: left;
+}
+
+#Action_bar .social .icon_close {
+    display: none;
+}
+
+#Action_bar .social input[type="text"] {
+  color: #656565;
+  background-color: #181921;
+  padding: 13px 16px;
+  outline: none;
+  margin: 0;
+  width: 230px;
+  max-width: 100%;
+  display: block;
+  margin-bottom: 0;
+  font-size: 14px;
+  border-width: 0;
+}
+
+#Action_bar .social input[type="text"]:focus {
+  color: #ffffff !important;
+  background-color: #22232f !important;
+}
+
+#Action_bar .social .icon_search {
+  padding: 13px 10px 10px 8px;
+  line-height: 20px;
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  background: #2581ff;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+#Action_bar .social .icon_search:hover {
+  background: #38acf4;
+}
+
+.mfn-megamenu {
+  -webkit-animation: opacitydownup .3s ease-in-out;
+  -moz-animation:    opacitydownup .3s ease-in-out;
+  -o-animation:      opacitydownup .3s ease-in-out;
+  animation:         opacitydownup .3s ease-in-out;
+}
+
+#Content .vc_row-no-padding .vc_inner {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#Content .section_wrapper {
+    margin: auto;
+    float: initial;
+}
+
+#Content .vc_row-has-fill>.vc_column_container>.vc_column-inner {
+  padding: 0;
+}
+
+#Content .wpb_wrapper > div {
+    margin-bottom: 0;
+}
+
+
+
+/*****************/
+/** AJOUT STYLE **/
+/*****************/
+
+.topbar_linkedin {
+  width: 21px;
+  margin-left: 5px;
+}
+
+.topbar_linkedin img {
+  position: absolute;
+}
+
+.topbar_contact {
+  padding: 0 20px;
+  margin-left: 5px;
+}
+
+.topbar_contact a {
+  background: #282a37;
+    padding: 6px 12px 5px 11px;
+    border-radius: 20px;
+    color: #ffffff !important;
+    font-family: 'GalanoGrotesque-Medium', sans-serif;
+    text-transform: uppercase;
+    font-size: 10px;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.topbar_contact a:hover {
+  background: #373a4c;
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+.align-muffin_visual {
+    margin-left: 5px;
+}
+
